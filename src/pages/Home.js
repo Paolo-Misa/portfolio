@@ -11,7 +11,7 @@ export default function Home(){
     return(
         <Fragment>
             <BannerBackGround data={data}/>
-            <BannerBackGround data={data}/>
+            
         </Fragment>
     )
 }
