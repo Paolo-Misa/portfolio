@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <AppNavbar/>
-      <Container className='m-0 p-0'>
+      <Container className='m-0 p-0 b-0' expand="lg">
           <Routes>
             <Route  path='/' element={<Home/>}/>
            

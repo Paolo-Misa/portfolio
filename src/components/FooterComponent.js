@@ -6,11 +6,11 @@ import '../styles/FooterStyle.css'
 export default function FooterComponent (){
 
     return(
-        <footer className="fixed_footer">
+        <footer className="fixed_footer ">
             <div className="content">
-                 <h5 className='m-0'>Paolo Misa</h5> 
-                 <h5>|</h5>
-                 <p className='m-0'>paolo.misa@gmail.com</p>
+                 <h5 className='m-0 content--text'>Paolo Misa</h5> 
+                 <h5 className='m-0'>|</h5>
+                 <p className='m-0 content--text'>paolo.misa@gmail.com</p>
 
             </div>
                     <div className='footer--socials justify-content-end'>
