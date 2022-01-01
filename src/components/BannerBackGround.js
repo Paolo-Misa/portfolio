@@ -14,7 +14,7 @@ export default function BannerBackGround({data}){
         <Row>
             <Col className="p-0">   
                <div className="banner--title position-absolute">
-                <h1 >{title}</h1>
+                <h1 className="banner--text" >{title}</h1>
                    </div>
             <div className='banner-div'>
             <img className="banner--image" src={image} alt='background image should be here'/>

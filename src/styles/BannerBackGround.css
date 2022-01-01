@@ -21,3 +21,12 @@
     top: 3.2rem;
     left:.5rem
 }
+
+
+  .banner--text{
+    /* Any lightness value below the threshold will result in white, any above will result in black */
+    /* --switch: calc((var(--light) - var(--threshold)) * -100%); */
+    /* color: #777; */
+    mix-blend-mode: screen;
+    /* color: aqua !important;; */
+  }

@@ -1,6 +1,8 @@
 
 import { Fragment } from 'react'
+
 import BannerBackGround from '../components/BannerBackGround'
+import FooterComponent from '../components/FooterComponent'
 
 export default function Home(){
 
@@ -11,7 +13,8 @@ export default function Home(){
     return(
         <Fragment>
             <BannerBackGround data={data}/>
-            
+            <BannerBackGround data={data}/>
+            <FooterComponent/>
         </Fragment>
     )
 }
