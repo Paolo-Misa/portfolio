@@ -16,7 +16,7 @@ export default function AppNavbar(){
                 <Nav className="mr-auto">
                    <Nav.Link className="navbar--text" as={Link} to="#"exact>Projects</Nav.Link>   
                    <Nav.Link className="navbar--text" as={Link} to="#"exact>Profile</Nav.Link>   
-                   <Nav.Link className="navbar--text"  as={Link} to="#"exact>Contact Me</Nav.Link>   
+                   <Nav.Link className="navbar--text"  as={Link} to="/contact"exact>Contact Me</Nav.Link>   
 
                 </Nav>
             </Navbar.Collapse>

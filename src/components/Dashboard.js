@@ -21,27 +21,27 @@ export default function Dashboard({project}){
          <Link to="/">Profile</Link>
          </div>
 
-        <div>
+        <div className='row justify-content-around'>
         
        
-         
-
                  <Card className='dashboard-card' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50" />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + `${project[project.length-3].image}`} />
                 <Card.ImgOverlay>
-                    <Card.Title>{project[project.length-1].name}</Card.Title>
+                    <Card.Title>{project[project.length-3].name}</Card.Title>
                 </Card.ImgOverlay>
                 <Card.Body>
                 <Card.Text>
-                {project[project.length-1].description}
+                {project[project.length-3].description}
                 </Card.Text>
                 </Card.Body>
                 </Card> 
 
+               
+
                 <Card className='dashboard-card' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={'../images/calculator.js'} />
+                <Card.Img variant="top" src= {process.env.PUBLIC_URL + `${project[project.length-2].image}`} />
                 <Card.ImgOverlay>
-                    <Card.Title>{project[project.length-2].name}</Card.Title>
+                    <Card.Title >{project[project.length-2].name}</Card.Title>
                 </Card.ImgOverlay>
                 <Card.Body>
                 <Card.Text>
@@ -50,14 +50,16 @@ export default function Dashboard({project}){
                 </Card.Body>
                 </Card> 
 
+                
+
                 <Card className='dashboard-card' style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={project[project.length-3].image} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + `${project[project.length-1].image}`} />
                 <Card.ImgOverlay>
-                    <Card.Title>{project[project.length-3].name}</Card.Title>
+                    <Card.Title>{project[project.length-1].name}</Card.Title>
                 </Card.ImgOverlay>
                 <Card.Body>
                 <Card.Text>
-                {project[project.length-3].description}
+                {project[project.length-1].description}
                 </Card.Text>
                 </Card.Body>
                 </Card> 
